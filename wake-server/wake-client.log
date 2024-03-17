@@ -1,0 +1,9 @@
+06:42:46 [INFO] Args: WakeServerArgs {
+    redis_ip: "192.168.1.107:6379",
+}
+06:42:46 [INFO] Connecting to redis server at 192.168.1.107:6379
+06:42:46 [INFO] Clients: ["test_client"]
+06:42:46 [DEBUG] (1) wake_server: Checking for wake for test_client
+06:42:46 [DEBUG] (1) wake_server::redis: Checking for wake key: wake/test_client/wake
+06:42:47 [DEBUG] (1) wake_server: Checking for wake for test_client
+06:42:47 [DEBUG] (1) wake_server::redis: Checking for wake key: wake/test_client/wake
