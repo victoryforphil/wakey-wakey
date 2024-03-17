@@ -1,6 +1,6 @@
 use clap::builder::Str;
-use log::info;
-use redis::Commands;
+use log::{debug, info};
+use redis::{Commands, RedisError};
 
 use crate::network_info::NetworkInfo;
 
@@ -16,7 +16,7 @@ impl RedisComms {
         info!("Connecting to redis server at {}", redis_ip);
         let client = redis::Client::open(format!("redis://{}", redis_ip)).unwrap();
         let mut con = client.get_connection().unwrap();
-
+        let _res: Result<String, RedisError> = con.sadd("wake/clients".to_string(), name.clone());
         RedisComms {
             name,
             redis_ip,
@@ -33,16 +33,19 @@ impl RedisComms {
     }
 
     pub fn subscribe_to_shutdown(&mut self) -> redis::RedisResult<()> {
-        info!("Subscribing to wake/{}/shutdown", self.name);
-
         Ok(())
     }
 
     pub fn should_shutdown(&mut self) -> redis::RedisResult<bool> {
-        let mut sub = self.con.as_pubsub();
-        sub.subscribe(format!("wake/{}/shutdown", self.name))?;
-        let msg = sub.get_message()?;
-        let payload: String = msg.get_payload()?;
-        Ok(payload == "true")
+        // Check for /wake/{name}/wake existence
+        let shutdown_key = format!("wake/{}/shutdown", self.name);
+        debug!("Checking for wake key: {}", shutdown_key);
+        let wake: bool = self.con.exists(shutdown_key.clone()).unwrap();
+        if wake {
+            // Remove the key
+            debug!("Removing shutdown key: {}", shutdown_key);
+            return self.con.del(shutdown_key);
+        }
+        Ok(wake)
     }
 }

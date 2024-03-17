@@ -26,7 +26,7 @@ struct WakeClientArgs {
 fn main() {
     CombinedLogger::init(vec![
         TermLogger::new(
-            LevelFilter::Info,
+            LevelFilter::Debug,
             Config::default(),
             TerminalMode::Mixed,
             ColorChoice::Auto,
@@ -85,5 +85,6 @@ fn main() {
             Err(e) => error!("Error checking for shutdown signal: {}", e),
         }
         //sleep 1 second
+        std::thread::sleep(std::time::Duration::from_secs(1));
     }
 }
