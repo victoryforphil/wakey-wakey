@@ -1,0 +1,17 @@
+06:10:42 [INFO] Args: WakeClientArgs {
+    name: "test_client",
+    redis_ip: "192.168.1.107:6379",
+    shutdown: "shutdown",
+}
+06:10:42 [INFO] MAC Address: 32:4B:13:14:E6:FD
+06:10:42 [INFO] Sending mac adress to redis server at 192.168.1.107:6379
+06:10:42 [INFO] Creating RedisComms for test_client
+06:10:42 [INFO] Connecting to redis server at 192.168.1.107:6379
+06:10:42 [INFO] MAC Address submitted successfully
+06:10:42 [INFO] Subscribing to wake/test_client/shutdown
+06:10:42 [INFO] Subscribed to shutdown
+06:10:45 [INFO] Received shutdown signal, running command: shutdown
+06:10:45 [INFO] Shutdown command executed successfully
+06:10:45 [INFO] stdout: 
+06:10:45 [INFO] stderr: shutdown: NOT super-user
+
