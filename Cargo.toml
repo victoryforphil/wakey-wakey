@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "wake-client",
+    "wake-web",
+    "wake-server",
+]
+
+resolver = "2"

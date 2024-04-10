@@ -1,47 +1,129 @@
-06:43:44 [INFO] Args: WakeClientArgs {
-    name: "test_client",
-    redis_ip: "192.168.1.107:6379",
-    shutdown: "echo hi",
+06:25:27 [INFO] Args: WakeClientArgs {
+    name: "glados",
+    redis_ip: ":filename7@192.168.1.51:6379",
+    shutdown: "shutdown",
 }
-06:43:44 [INFO] MAC Address: 32:4B:13:14:E6:FD
-06:43:44 [INFO] Sending mac adress to redis server at 192.168.1.107:6379
-06:43:44 [INFO] Creating RedisComms for test_client
-06:43:44 [INFO] Connecting to redis server at 192.168.1.107:6379
-06:43:44 [INFO] MAC Address submitted successfully
-06:43:44 [INFO] Subscribed to shutdown
-06:43:44 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:44 [INFO] No shutdown signal received
-06:43:45 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:45 [INFO] No shutdown signal received
-06:43:46 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:46 [INFO] No shutdown signal received
-06:43:47 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:47 [INFO] No shutdown signal received
-06:43:48 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:48 [INFO] No shutdown signal received
-06:43:49 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:49 [INFO] No shutdown signal received
-06:43:50 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:50 [INFO] No shutdown signal received
-06:43:51 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:51 [INFO] No shutdown signal received
-06:43:52 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:52 [INFO] No shutdown signal received
-06:43:53 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:53 [INFO] No shutdown signal received
-06:43:54 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:54 [INFO] No shutdown signal received
-06:43:55 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:55 [INFO] No shutdown signal received
-06:43:56 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:56 [INFO] No shutdown signal received
-06:43:57 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:57 [INFO] No shutdown signal received
-06:43:58 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:58 [INFO] No shutdown signal received
-06:43:59 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:43:59 [INFO] No shutdown signal received
-06:44:00 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:44:00 [INFO] No shutdown signal received
-06:44:01 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/test_client/shutdown
-06:44:01 [INFO] No shutdown signal received
+06:25:27 [INFO] MAC Address: D8:BB:C1:05:7E:A6
+06:25:27 [INFO] Sending mac adress to redis server at :filename7@192.168.1.51:6379
+06:25:27 [INFO] Creating RedisComms for glados
+06:25:27 [INFO] Connecting to redis server at :filename7@192.168.1.51:6379
+06:25:27 [INFO] MAC Address submitted successfully
+06:25:27 [INFO] Subscribed to shutdown
+06:25:27 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:27 [INFO] No shutdown signal received
+06:25:28 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:28 [INFO] No shutdown signal received
+06:25:29 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:29 [INFO] No shutdown signal received
+06:25:30 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:30 [INFO] No shutdown signal received
+06:25:31 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:31 [INFO] No shutdown signal received
+06:25:32 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:32 [INFO] No shutdown signal received
+06:25:33 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:33 [INFO] No shutdown signal received
+06:25:34 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:34 [INFO] No shutdown signal received
+06:25:35 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:35 [INFO] No shutdown signal received
+06:25:36 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:36 [INFO] No shutdown signal received
+06:25:37 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:37 [INFO] No shutdown signal received
+06:25:38 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:38 [INFO] No shutdown signal received
+06:25:39 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:39 [INFO] No shutdown signal received
+06:25:40 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:40 [INFO] No shutdown signal received
+06:25:41 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:41 [INFO] No shutdown signal received
+06:25:42 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:42 [INFO] No shutdown signal received
+06:25:43 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:43 [INFO] No shutdown signal received
+06:25:44 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:44 [INFO] No shutdown signal received
+06:25:45 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:45 [INFO] No shutdown signal received
+06:25:46 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:46 [INFO] No shutdown signal received
+06:25:47 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:47 [INFO] No shutdown signal received
+06:25:48 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:48 [INFO] No shutdown signal received
+06:25:49 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:49 [INFO] No shutdown signal received
+06:25:50 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:50 [INFO] No shutdown signal received
+06:25:51 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:51 [INFO] No shutdown signal received
+06:25:52 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:52 [INFO] No shutdown signal received
+06:25:53 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:53 [INFO] No shutdown signal received
+06:25:54 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:54 [INFO] No shutdown signal received
+06:25:55 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:55 [INFO] No shutdown signal received
+06:25:56 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:56 [INFO] No shutdown signal received
+06:25:57 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:57 [INFO] No shutdown signal received
+06:25:58 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:58 [INFO] No shutdown signal received
+06:25:59 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:25:59 [INFO] No shutdown signal received
+06:26:00 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:00 [INFO] No shutdown signal received
+06:26:01 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:01 [INFO] No shutdown signal received
+06:26:02 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:02 [INFO] No shutdown signal received
+06:26:03 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:03 [INFO] No shutdown signal received
+06:26:04 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:04 [INFO] No shutdown signal received
+06:26:05 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:05 [INFO] No shutdown signal received
+06:26:06 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:06 [INFO] No shutdown signal received
+06:26:07 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:07 [INFO] No shutdown signal received
+06:26:08 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:08 [INFO] No shutdown signal received
+06:26:09 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:09 [INFO] No shutdown signal received
+06:26:10 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:10 [INFO] No shutdown signal received
+06:26:11 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:11 [INFO] No shutdown signal received
+06:26:12 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:12 [INFO] No shutdown signal received
+06:26:13 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:13 [INFO] No shutdown signal received
+06:26:14 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:14 [INFO] No shutdown signal received
+06:26:15 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:15 [INFO] No shutdown signal received
+06:26:16 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:16 [INFO] No shutdown signal received
+06:26:17 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:17 [INFO] No shutdown signal received
+06:26:18 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:18 [INFO] No shutdown signal received
+06:26:19 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:19 [INFO] No shutdown signal received
+06:26:20 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:20 [INFO] No shutdown signal received
+06:26:21 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:21 [INFO] No shutdown signal received
+06:26:22 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:22 [INFO] No shutdown signal received
+06:26:23 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:23 [INFO] No shutdown signal received
+06:26:24 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:24 [INFO] No shutdown signal received
+06:26:25 [DEBUG] (1) wake_client::redis: Checking for wake key: wake/glados/shutdown
+06:26:25 [INFO] No shutdown signal received
