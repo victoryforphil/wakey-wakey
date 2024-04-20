@@ -1,0 +1,4 @@
+02:37:55 [ERROR] Bright red error
+02:37:55 [INFO] This only appears in the log file
+02:37:55 [DEBUG] (1) wake_client: This level is currently not enabled for any logger
+02:37:55 [INFO] MAC Address: 32:4B:13:14:E6:FD
